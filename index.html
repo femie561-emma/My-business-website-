@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website page</title>
+</head>
+<body>
+    <div class="container">
+    <nav class="nav">
+<div class="logo"> <h1>PraRoz🌍</h1> </div>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="design.html">Design</a></li>
+<li><a href="calculator.html">Calculator</a></li>
+<div class="search">
+ <input type="text" placeholder="Type to search" >
+ <a href=""><button class="srch">Search</button></a>
+ </div>
+ </nav>
+ 
+
+<section class="paragraph">
+<h1>Web Design & <br><span class="dev">Development </span> <br> Course</h1>
+
+<h4>Web Design is a specialiasation of the design styream.They also use HTML,
+    <br><br> CSS,WYSIWYG editing software, mark up validators etc... <br><br> to creat design elements.</h4>
+<br>
+<button class="btn1">JOIN US</button>
+</section>
+<br>
+
+<form action="form.html" class="form" onSubmit="return validateForm()" >
+    <h3 class="btn2">Login Here</h3>
+<br><br>
+<input type="email" name="email" placeholder="Enter Your Email Here"        id="email" >
+<br> <br>
+<input type="password" name="Password" placeholder="Enter Your Password Here"       id="password" >
+<br><br>
+<button class="btn3">Login</button>
+<br><br>
+<span class="noacc"><span >Don't have an account? <br>
+</span><a href="signup.html" id="sign">Sign up</a>  here</span>
+<br><br>
+<h5 class="lastlogin">Log in with</h5>
+
+<div class="icon">
+    <a href="http://facebook.com"><ion-icon name="logo-facebook"><img src="fcb.JPG" alt="" width="30px"></ion-icon></a>
+
+<a href="http://instagram.com"><ion-icon name="logo-instagram"><img src="ig.JPG" alt="" width="40px"></ion-icon></a>
+
+<a href="http://twitter.com"><ion-icon name="logo-twitter"><img src="twtt.JPG" alt="" width="30px"></ion-icon></a>
+<!-- <a href="#"><ion-icon name="logo-google"><img src="" alt="" ></ion-icon></a> -->
+<a href="http://telegram.com"><ion-icon name="logo-telegram"><img src="tel.JPG" alt="" width="30px"></ion-icon></a>
+</div>
+
+</form>
+</div>
+
+
+    <script>
+  function    validateForm(){
+  let email =
+  document.getElementById("email").value.trim();
+
+  let password =
+  document.getElementById("password").value.trim();
+
+    if (email === "" || password === "") {
+        alert("please fill up this field");
+        return false; 
+    }
+
+
+     if (!email.includes("@") || email.includes (" . ")) {
+        alert("please enter a valid email.");
+        return false;
+     }
+
+
+     alert("Form submitted successfully!")
+       return true;
+     }
+
+    </script>
+</body>
+</html>

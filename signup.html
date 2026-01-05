@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Here</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ .nav1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: dimgray;
+    color: #fff;
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    background-color:black ;
+    height: 40px;
+    padding-top: 15px;
+}
+
+a{
+    color: #fff;
+    text-decoration: 0;
+}
+
+.container{
+     padding-right: none;
+margin-right: none;
+    
+}
+
+.btt{
+    background-color: green;
+    border-radius: 0;
+}
+
+.cont1{
+    background-color: dimgray;
+    min-height: 100vh;
+}
+
+
+
+
+
+input{
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    font-size: 13px;
+    text-align: center;
+    height: 15px;
+    
+    padding: 0px;
+    
+}
+
+::placeholder{
+    color: black;
+}
+
+.placeholder{
+  font-weight: 80px;
+}
+
+label{
+    color: black;
+    font-size: 20px;
+}
+
+h3, h2{
+    color: #fff;
+   
+}
+
+h2{
+    font: optional;
+    font-size: 40px;
+}
+
+button{
+    background-color: black;
+    color: #fff;
+    font-size: 17px;
+    border: 2px;
+    border-radius: 9px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+}
+
+.popup{
+    background-color: brown;
+    border: 2px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* float: right; */
+}
+
+.popup .bnt{
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 13px;
+}
+
+
+.pg{
+    font-size: 100px;
+    color: orange;
+    margin-top: 20px;
+    margin-left: -80px;
+}
+
+
+
+
+.frm{
+   background-color: #fff99f79;
+   text-align: center;
+  
+  margin-left: 200px;
+  margin-top: 40px;
+   
+}
+
+.section1{
+  background-color: ;
+}
+
+
+
+
+.section3{
+     background-color:#fff;
+      min-height: 100vh;
+}
+
+</style>
+<body>
+   
+<div class="container">
+ <nav>
+            <div class="nav1">
+<span class="logo1"><span class="cap">🎓</span>E-LEARNING</span>
+<div class="logo2">
+<span><h6>   Monday-Friday</h6><h4>9:00AM-9:00PM</h4> </div> </span>
+<span class="call">📞<h5>Call US <BR> +(321)70-150-279-95 </BR></h5></span>
+
+            </div>
+            <div class="nav2">
+                <li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="design.html">Design</a></li>
+<li><a href="calculator.html">Calculator</a></li>
+<div class="both">
+<button class="btt">Get Certificate</button>
+</div>
+            </div>
+        </nav>
+<div class="cont1">
+ <h3>WELCOME TO ACADEMIA</h3>
+ <br>
+ <h2>Best Online Education <br>
+Expertise</h2>
+<br>
+h4
+</div>
+
+
+
+
+
+</div>
+
+    <script>
+ function checkPasswords() {
+  let pass =
+  document.getElementById("pass").value;
+
+  let confirm =
+  document.getElementById("confirm").value;
+
+  let email =
+  document.getElementById("email").value;
+
+
+  let male =
+  document.getElementById("male").value;
+
+   let female =
+  document.getElementById("female").value;
+
+   let bisexual =
+  document.getElementById("bisexual").value;
+
+  let number =
+  document.getElementById("number").value;
+
+  if (pass === "" || confirm === "") {
+  alert("please fill in both field");
+    return false;
+  } 
+  
+  if(pass !== confirm) {
+        alert("passwords do not match!");
+      return false;
+}  
+
+if (!email.includes("@") || email.includes(" .com ") ) {
+   alert("Invalid email");
+   return false;
+}
+
+ if (male === " " && female === " " && bisexual === " ") {
+    alert("Include your Gender");
+    return false;
+ }
+
+ if (number === "") {
+     alert("Enter Valid Number");
+     return false;
+ }
+
+ alert("Valid Form");
+ }
+
+
+    </script>
+    
+</body>
+</html>

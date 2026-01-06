@@ -16,19 +16,20 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: darkgrey;
 }
 
  .nav1 {
     display: flex;
     justify-content: space-around;
-    background-color: dimgray;
+    background-color: seagreen;
     color: #fff;
 }
 
 .nav2{
     display: flex;
     justify-content: space-around;
-    background-color:black ;
+    background-color: seagreen;
     height: 40px;
     padding-top: 15px;
 }
@@ -50,8 +51,10 @@ margin-right: none;
 }
 
 .cont1{
-    background-color: dimgray;
-    min-height: 100vh;
+    background-color: seagreen;
+    width: 440px;
+    border: 3px solid black;
+    
 }
 
 
@@ -61,11 +64,11 @@ margin-right: none;
 input{
     font-size: 12px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
+    color: red;
     border: none;
     border-bottom: 2px solid black;
     background: transparent;
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
     height: 15px;
     
@@ -97,8 +100,8 @@ h2{
 }
 
 button{
-    background-color: black;
-    color: #fff;
+    background-color: orangered;
+    color: hsl(0, 0%, 100%);
     font-size: 17px;
     border: 2px;
     border-radius: 9px;
@@ -159,6 +162,29 @@ button:hover{
       min-height: 100vh;
 }
 
+.brd{
+    border: 1px solid ;
+    height:200px;
+    width: 400px;
+}
+
+h5{
+    border: 1px;
+    border-top: 1px solid;
+    
+}
+
+.both{
+   display: flex;
+   justify-content: space-around;
+   background-color: burlywood;
+}
+
+.signup{
+  font-size: 30px;
+  color: orangered;
+}
+
 </style>
 <body>
    
@@ -186,10 +212,75 @@ button:hover{
  <br>
  <h2>Best Online Education <br>
 Expertise</h2>
+</div>
+<div class="both">
+<div class="prtB">
+    <h4 style="color: green;">LEARN ANYTHING</h4>
+
+    <br>
+    <h1>Benefits About Online <br>
+    Learning Expertise
+    </h1>
+    <div class="brd">
+  <p>
+    <h5>Online Courses</h5>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod illo quidem, nisi dolore ex.
+  </p>
 <br>
-h4
+<p>
+    <h5>Earn A Certificate</h5>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod illo quidem, nisi dolore ex.
+  </p>
+  <br>
+  <p>
+    <h5>Learn With Expert</h5>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod illo quidem, nisi dolore ex.
+  </p>
+
+    </div>
+  
 </div>
 
+
+
+
+  <form action="index.html" onsubmit="return checkPasswords()">
+<p class="signup">Sign Up</p>
+<input type="name" placeholder="First name" required id="firstName">
+<br><br> 
+
+<input type="name" placeholder="last name" required id="lastName">
+<br><br>
+
+<input type="email" placeholder="Email" id="email">
+<br><br>
+
+<input type="number" value="" placeholder="your number" id="number">
+<br><br>
+
+<input type="password" placeholder="Create Password"     id="pass">
+
+  <br><br>
+
+<input type="password" placeholder="ConfirmPassword"        id="confirm">
+  <br><br>
+  <h3>Choose Your Gender</h3>
+  
+<input type="radio" id="male" name="1">
+<label for="">Male</label>
+<br>
+
+<input type="radio" id="female" name="1">
+<label for="">Female</label>
+<br>
+
+<input type="radio" id="bisexual" name="1">
+<label for="">Bisexual</label>
+
+<br><br>
+<button><a href=""></a>continue</button>
+</div>
+    </form>
 
 
 
